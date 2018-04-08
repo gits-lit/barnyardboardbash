@@ -44,7 +44,7 @@ public class ChickenCoin : MonoBehaviour {
 
 		if (score >= 6) {
 			TextMesh collectText = GameObject.Find ("CollectEnd").GetComponent<TextMesh> ();
-			collectText.text = "You get a point!!";
+			collectText.text = "You may advance to the next red space";
 			timerScript.victory = true;
 		}
 	}
