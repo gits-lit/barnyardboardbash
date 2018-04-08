@@ -38,6 +38,7 @@ namespace Vuforia
 
 
         #region PUBLIC_METHODS
+		public MazeTimer timerScript;
 
         /// <summary>
         /// Implementation of the ITrackableEventHandler function called when the
@@ -84,6 +85,7 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+			timerScript.activate();
         }
 
 

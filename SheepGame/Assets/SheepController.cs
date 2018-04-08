@@ -7,6 +7,7 @@ public class SheepController : MonoBehaviour {
 
 	private Rigidbody rb;
 	public GameObject camera;
+	public MazeTimer timerScript;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,7 @@ public class SheepController : MonoBehaviour {
 		}
 		//transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
 		Quaternion q = transform.rotation;
-		q.eulerAngles = new Vector3(0, q.eulerAngles.y, 0);
+		q.eulerAngles = new Vector3 (0, q.eulerAngles.y, 0);
 		transform.rotation = q;
 
 		Vector3 tmp = transform.position;
@@ -35,8 +36,18 @@ public class SheepController : MonoBehaviour {
 		transform.position = tmp;
 
 		Vector3 dir = transform.position;
-		dir = camera.transform.TransformDirection(dir);
+		dir = camera.transform.TransformDirection (dir);
 		dir.y = 0;
-		Vector3.Normalize(dir);
+		Vector3.Normalize (dir);
+	}
+
+	void OnCollisionEnter(Collision col) {
+		if(col.gameObject.name == "MazeGoal")
+		{
+			Destroy(GameObject.FindGameObjectWithTag ("Maze"));
+			TextMesh mazeText = GameObject.Find ("MazeEnd").GetComponent<TextMesh> ();
+			mazeText.text = "You get a point!!";
+			timerScript.victory = true;
+		}
 	}
 }
