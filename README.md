@@ -62,10 +62,10 @@ This game was going to be similar to the game Simon. A pig was going to ask you 
 Video coming soon!
 
 ## Thanks
--[HackXX Staff and Volunteers for hosting the hackathon](http://hackxx.sdhacks.io)
--[Vuforia Library](https://www.vuforia.com)
--[Farm Animal Set by VertexCat](https://assetstore.unity.com/packages/3d/farm-animals-set-97945)
--[Adorable 3D Food Set](https://assetstore.unity.com/packages/3d/props/food/adorable-3d-food-set-31249)
+- [HackXX Staff and Volunteers for hosting the hackathon](http://hackxx.sdhacks.io)
+- [Vuforia Library](https://www.vuforia.com)
+- [Farm Animal Set by VertexCat](https://assetstore.unity.com/packages/3d/farm-animals-set-97945)
+- [Adorable 3D Food Set](https://assetstore.unity.com/packages/3d/props/food/adorable-3d-food-set-31249)
 
 ## License
 Copyright 2018 Erika Joun Antony Nguyen Alissa Ren Hariett Wang
