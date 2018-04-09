@@ -40,6 +40,11 @@ namespace Vuforia
         #region PUBLIC_METHODS
 		public MazeTimer mazeTimerScript;
 		public CollectTimer collectTimerScript;
+		public CarrotTimer carrotTimerScript;
+		public CropTimer2 cropTimerScript;
+		public SpawnPointsController spawnScript;
+		public BullTimer bullTimerScript;
+		//public DuckTimer duckTimerScript;
 
         /// <summary>
         /// Implementation of the ITrackableEventHandler function called when the
@@ -72,6 +77,12 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+			Terrain[] terrainComponents = GetComponentsInChildren<Terrain> (true);
+
+			foreach( Terrain component in terrainComponents)
+			{
+					component.enabled = true;
+			}
 
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
@@ -96,6 +107,27 @@ namespace Vuforia
 			}
 			catch {
 			}
+			try {
+			carrotTimerScript.activate();
+			}
+			catch {
+			}
+			try {
+			cropTimerScript.activate();
+			}
+			catch {
+			}
+			try {
+			spawnScript.activate();
+			bullTimerScript.activate();
+			}
+			catch {
+			}
+			/*try {
+			duckTimerScript.activate();
+			}
+			catch {
+			}*/
         }
 
 
@@ -103,7 +135,12 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+			Terrain[] terrainComponents = GetComponentsInChildren<Terrain> (true);
 
+			foreach (Terrain component in terrainComponents) {
+				component.enabled = false;
+			}
+			
             // Disable rendering:
             foreach (Renderer component in rendererComponents)
             {
@@ -117,6 +154,9 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+			if (mTrackableBehaviour.TrackableName == "bull") {
+				spawnScript.deactivate ();
+			}
         }
 
         #endregion // PRIVATE_METHODS

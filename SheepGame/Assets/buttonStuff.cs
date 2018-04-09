@@ -35,7 +35,7 @@ public class buttonStuff : MonoBehaviour {
 		if (score >= 25) {
 			Destroy (GameObject.FindGameObjectWithTag ("Carrot"));
 			TextMesh mazeText = GameObject.Find ("CarrotEnd").GetComponent<TextMesh> ();
-			mazeText.text = "You get a point!!";
+			mazeText.text = "Move to next orange";
 			carrotScript.victory = true;
 		}
 	}

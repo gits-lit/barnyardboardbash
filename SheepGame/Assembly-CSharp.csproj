@@ -51,10 +51,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BullTimer.cs" />
+     <Compile Include="Assets\buttonStuff.cs" />
+     <Compile Include="Assets\CarrotTimer.cs" />
      <Compile Include="Assets\ChickenCoin.cs" />
+     <Compile Include="Assets\ChickScript.cs" />
      <Compile Include="Assets\CollectTimer.cs" />
+     <Compile Include="Assets\CropCount.cs" />
+     <Compile Include="Assets\CropTimer2.cs" />
+     <Compile Include="Assets\DuckController.cs" />
+     <Compile Include="Assets\DuckNewScript.cs" />
+     <Compile Include="Assets\DuckScript.cs" />
+     <Compile Include="Assets\DuckTimer.cs" />
+     <Compile Include="Assets\FixMovement.cs" />
+     <Compile Include="Assets\Knockback.cs" />
      <Compile Include="Assets\MazeTimer.cs" />
+     <Compile Include="Assets\MotherDuckMovement.cs" />
+     <Compile Include="Assets\MoveForward.cs" />
+     <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\SheepController.cs" />
+     <Compile Include="Assets\SpawnPointsController.cs" />
+     <Compile Include="Assets\SpawnScript.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
@@ -99,6 +116,7 @@
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
+     <None Include="Assets\Paper Environment Pack vol. 1\ReadMe.txt" />
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\VertexColorFarmAnimals\Shaders\VertexColorUnlit.shader" />
@@ -106,6 +124,7 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\BarnyardDatabase.xml" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

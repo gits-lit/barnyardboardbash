@@ -46,7 +46,7 @@ public class SheepController : MonoBehaviour {
 		{
 			Destroy(GameObject.FindGameObjectWithTag ("Maze"));
 			TextMesh mazeText = GameObject.Find ("MazeEnd").GetComponent<TextMesh> ();
-			mazeText.text = "You get a point!!";
+			mazeText.text = "Move to next black";
 			timerScript.victory = true;
 		}
 	}

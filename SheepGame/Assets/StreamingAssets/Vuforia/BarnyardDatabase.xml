@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="shellysheep" size="5.000000 7.779579" />
+    <ImageTarget name="peterpig" size="5.000000 7.680000" />
+    <ImageTarget name="harriethen" size="5.000000 7.667732" />
+    <ImageTarget name="danaduck" size="5.000000 7.779579" />
+    <ImageTarget name="carycow" size="5.000000 7.619048" />
+    <ImageTarget name="benedictbull" size="5.000000 7.667732" />
+    <ImageTarget name="sheep" size="5.000000 7.779579" />
+    <ImageTarget name="pig" size="5.000000 7.680000" />
+    <ImageTarget name="crops" size="5.000000 7.717042" />
+    <ImageTarget name="bull" size="5.000000 7.667732" />
+    <ImageTarget name="chicken" size="5.000000 7.655502" />
+    <ImageTarget name="duck" size="5.000000 7.779579" />
+    <ImageTarget name="carrot" size="5.000000 7.680000" />
+    <ImageTarget name="cow" size="5.000000 7.619048" />
+    <ImageTarget name="dollarTarget" size="5.000000 2.170833" />
+  </Tracking>
+</QCARConfig>

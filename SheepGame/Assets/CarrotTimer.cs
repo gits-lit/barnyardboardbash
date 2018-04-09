@@ -13,8 +13,8 @@ public class CarrotTimer : MonoBehaviour {
 	void Start () {
 		victory = false;
 		textObject = GameObject.Find ("CarrotTimer").GetComponent<TextMesh> ();
-		textObject.text = "Timer: 30";
-		timeLeft = 30;
+		textObject.text = "Timer: 20";
+		timeLeft = 20;
 	}
 
 	// Update is called once per frame
