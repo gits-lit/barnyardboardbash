@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody rb;
 	public GameObject camera;
-	public MazeTimer timerScript;
+	public BullTimer timerScript;
 
 	// Use this for initialization
 	void Start () {
@@ -34,19 +34,20 @@ public class PlayerController : MonoBehaviour {
 		tmp.y = 0;
 		transform.position = tmp;
 
+
 		/*Vector3 dir = transform.position;
 		dir = camera.transform.TransformDirection (dir);
 		dir.y = 0;
-		Vector3.Normalize (dir);*
+		Vector3.Normalize (dir);*/
 	}
 
-	void OnCollisionEnter(Collision col) {
-		if(col.gameObject.name == "MazeGoal")
-		{
-			Destroy(GameObject.FindGameObjectWithTag ("Maze"));
-			TextMesh mazeText = GameObject.Find ("MazeEnd").GetComponent<TextMesh> ();
-			mazeText.text = "You get a point!!";
-			timerScript.victory = true;
+	void OnTriggerEnter(Collider col) {
+		if(col.gameObject.name == "GameOverCollider")
+			{
+			Destroy(GameObject.FindGameObjectWithTag ("bull"));
+			TextMesh bullText = GameObject.Find ("BullEnd").GetComponent<TextMesh> ();
+			bullText.text = "Failure";
+			timerScript.victory = false;
 		}
 	}
 }
